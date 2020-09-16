@@ -1,0 +1,14 @@
+
+server:
+  port: 5050
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8001/eureka,http://peer2:8002/eureka
+  instance:
+    prefer-ip-address: true
+
+
+spring:
+  application:
+    name: microservice-consumer-movie-feign

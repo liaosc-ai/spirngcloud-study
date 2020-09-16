@@ -1,0 +1,12 @@
+
+server:
+  port: 7070
+spring:
+  application:
+    name: microservice-consumer-movie-ribbon
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8001/eureka/,http://peer2:8002/eureka/
+  instance:
+    preferIpAddress: true

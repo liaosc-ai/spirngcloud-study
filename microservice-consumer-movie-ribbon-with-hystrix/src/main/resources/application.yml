@@ -1,0 +1,13 @@
+
+server:
+  port: 7878
+eureka:
+  instance:
+    prefer-ip-address: false
+    hostname: ribbon
+  client:
+    service-url:
+      defaultZone: http://peer1:8001/eureka,http://peer2:8002/eureka
+spring:
+  application:
+    name: microservice-consumer-movie-ribbon-with-hystrix
