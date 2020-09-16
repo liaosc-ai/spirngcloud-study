@@ -1,0 +1,11 @@
+
+server:
+  port: 6868
+spring:
+  application:
+    name: microservice-config-server
+  cloud:
+    config:
+      git:
+        url:
+
