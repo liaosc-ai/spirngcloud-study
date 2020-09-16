@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: spring-cloud-microservice-study
+  cloud:
+    config:
+      uri: http://config-server:6868/
+      profile: dev  # 指定 git 仓库的分支
+      label: master

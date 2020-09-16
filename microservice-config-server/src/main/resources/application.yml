@@ -6,6 +6,10 @@ spring:
     name: microservice-config-server
   cloud:
     config:
-      git:
-        url:
+      server:
+        git:
+          uri: https://github.com/liaosc-ai/spirngcloud-study/
+          search-paths: config-repo
+          username:
+          password:
 
